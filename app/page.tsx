@@ -22,6 +22,13 @@ export default function HomePage() {
 
       <section className="relative mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-24 lg:px-8">
         <div className="max-w-3xl rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-[0_0_80px_rgba(124,58,237,0.18)] backdrop-blur-xl sm:p-12">
+          
+          {/* مكان الإعلان فوق عبارة مرحبا بك */}
+          <div className="mb-6 flex justify-center overflow-hidden rounded-xl bg-black/30 p-2 border border-white/5">
+            {/* ضع كود الإعلان الخاص بك هنا (مثل سكريبت أو بانر Monetag) */}
+            <span className="text-xs text-zinc-500">مساحة إعلانية</span>
+          </div>
+
           <p className="mb-4 inline-flex rounded-full border border-violet-400/30 bg-violet-500/10 px-4 py-2 text-sm font-semibold text-violet-200">
             Aerixweb • منصة أدوات برمجية متقدمة
           </p>
@@ -41,7 +48,6 @@ export default function HomePage() {
             >
               ابدأ رحلتك ⚡
             </Link>
-          
           </div>
         </div>
 
