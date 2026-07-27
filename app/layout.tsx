@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cairo } from "next/font/google";
+import Script from "next/script"; // 1. استيراد مكون السكريبت
 import type { ReactNode } from "react";
 import "./globals.css";
 
@@ -25,6 +26,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="ar" dir="rtl">
       <body className={`${cairo.variable} font-sans min-h-screen bg-[#050505] text-white antialiased`}>
         {children}
+
+        {/* 2. إضافة كود إعلان Monetag باستخدام Script */}
+        <Script
+          id="monetag-multitag"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(s){s.dataset.zone='11432428',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`,
+          }}
+        />
       </body>
     </html>
   );
