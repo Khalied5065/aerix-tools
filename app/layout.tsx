@@ -13,7 +13,10 @@ export const metadata: Metadata = {
   title: "Aerixweb | منصة أدوات برمجية",
   description: "منصة عربية متقدمة لأدوات تيك توك والبرمجيات",
   icons: {
-    icon: "/vercal.png", // حط صورتك أو أيقونتك داخل مجلد public بهذا الاسم
+    icon: "/vercal.png",
+  },
+  other: {
+    "monetag": "a95930fa755c9d862d0762e3eba2f94a",
   },
 };
 
