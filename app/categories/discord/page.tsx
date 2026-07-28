@@ -5,6 +5,11 @@ const options = [
     title: "أدوات الصيد",
     description: "ابحث عن العناصر المتاحة بسرعة وراقب التغيرات اللحظية.",
     href: "/categories/discord/sniping",
+  },
+  {
+    title: "اداه سحب التوكن",
+    description: "ابحث عن العناصر المتاحة بسرعة وراقب التغيرات اللحظية.",
+    href: "/categories/discord/token",
   }
 ];
 
@@ -36,3 +41,4 @@ export default function TiktokCategoryPage() {
     </main>
   );
 }
+
